@@ -37,6 +37,21 @@ class SuperMarche:
         self.lbl_contact = Label(client_frame, text='Contact', font=("times new roman", 15, "bold"), bg="white")
         self.lbl_contact.grid(row=0, column=0, sticky=W, padx=5, pady=2)
 
+        self.lbl_nomclient = Label(client_frame, text='Nom Client', font=("times new roman", 15, "bold"), bg="white")
+        self.lbl_nomclient.grid(row=1, column=0, sticky=W, padx=5, pady=2)
+
+        self.lbl_email = Label(client_frame, text='Email', font=("times new roman", 15, "bold"), bg="white")
+        self.lbl_email.grid(row=2, column=0, sticky=W, padx=5, pady=2)
+
+        self.txt_contact = ttk.Entry(client_frame, font=("times new roman", 15))
+        self.txt_contact.grid(row=0, column=1, sticky=W, padx=5, pady=2)
+
+        self.txt_nomclient = ttk.Entry(client_frame, font=("times new roman", 15))
+        self.txt_nomclient.grid(row=1, column=1, sticky=W, padx=5, pady=2)
+
+        self.txt_email = ttk.Entry(client_frame, font=("times new roman", 15))
+        self.txt_email.grid(row=2, column=1, sticky=W, padx=5, pady=2)
+
 
 if __name__ == "__main__":
     root = Tk()
